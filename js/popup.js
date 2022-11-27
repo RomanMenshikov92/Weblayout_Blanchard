@@ -49,23 +49,34 @@ document.addEventListener('DOMContentLoaded', function () {
 
   /* function close btn popup */
   windowBtnClose.forEach((elem) => {
+    enableScroll();
     elem.addEventListener('click', function () {
       wrapperPopup.classList.remove('popup-gallery__wrapper--visible');
-      enableScroll();
+      windowPopup.forEach((el) => {
+        el.classList.remove('popup-gallery__window--visible');
+      });
     });
-
   });
 
-  /* function close popup */
-  wrapperPopup.addEventListener('click', (e) => {
+  /* function close window popup */
+  windowPopup.forEach((e) => {
+    enableScroll();
+    e.addEventListener('click', function () {
+      wrapperPopup.classList.remove('popup-gallery__wrapper--visible');
+      windowPopup.forEach((el) => {
+        el.classList.remove('popup-gallery__window--visible');
+      });
+    });
+  });
 
+  /* function close wrapper popup */
+  wrapperPopup.addEventListener('click', (e) => {
+    enableScroll();
     if (e.target == wrapperPopup) {
       wrapperPopup.classList.remove('popup-gallery__wrapper--visible');
       windowPopup.forEach((el) => {
         el.classList.remove('popup-gallery__window--visible');
       });
     }
-    // enable scroll
-    enableScroll();
   });
 })
