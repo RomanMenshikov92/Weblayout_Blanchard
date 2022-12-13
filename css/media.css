@@ -613,7 +613,6 @@
   /*** --- CONTACT --- ***/
   .contact {
     padding-top: 80px;
-    padding-bottom: 8px;
   }
 
   .contact__container {
@@ -655,6 +654,10 @@
 
   .contact__list-social {
     margin-left: -1px;
+  }
+
+  .map-yandex {
+    height: 700px;
   }
 
   /*** --- FOOTER --- ***/
@@ -858,10 +861,6 @@
     bottom: -70px;
   }
   /*** --- CONTACT --- ***/
-  .contact {
-    padding-bottom: 7px;
-  }
-
   .contact__form {
     gap: 13px;
   }
@@ -887,6 +886,10 @@
   .js-validate-error-label {
     top: 1px;
     font-size: 10px;
+  }
+
+  .map-yandex {
+    height: 698px;
   }
 
   /*** --- POPUP --- ***/
@@ -1339,7 +1342,6 @@
   /*** --- CONTACT --- ***/
   .contact {
     padding-top: 51px;
-    padding-bottom: 9px;
   }
 
   .contact__top {
@@ -1415,7 +1417,7 @@
   }
 
   .map-yandex {
-    height: 327px;
+    height: 337px;
   }
 
   /*** --- FOOTER --- ***/

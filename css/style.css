@@ -2073,7 +2073,7 @@ body {
 /*** --- CONTACT --- ***/
 .contact {
   padding-top: 84px;
-  padding-bottom: 8px;
+  /* padding-bottom: 8px; */
 }
 
 .contact__top {
@@ -2244,7 +2244,7 @@ body {
 /* - div contact yandex map - */
 .map-yandex {
   width: 100%;
-  height: 692px;
+  height: 701px;
 }
 
 /* - contact yandex map style - */
@@ -2263,8 +2263,8 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding-top: 49px;
-  padding-bottom: 42px;
+  padding-top: 47px;
+  padding-bottom: 45px;
 }
 .footer__logo {
   margin-top: 2px;
