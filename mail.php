@@ -34,7 +34,7 @@ try {
   // Настройки вашей почты
   $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
   $mail->Username   = 'romanmenshikov1992@gmail.com'; // Логин на почте
-  $mail->Password   = ''; // Пароль на почте
+  $mail->Password   = 'vldvdyyrdomtoaed'; // Пароль на почте
   $mail->SMTPSecure = 'ssl';
   $mail->Port       = 465;
 
@@ -42,6 +42,7 @@ try {
 
   // Получатель письма
   $mail->addAddress('romanmenshikov1992@gmail.com');
+  $mail->addAddress('R-Tupac@yandex.ru');
 
   // Отправка сообщения
   $mail->isHTML(true);
