@@ -33,35 +33,6 @@
   --colorRedValidate: #d11616;
 }
 
-/*** --- НАЧАЛЬНЫЕ БАЗОВЫЕ СТИЛИ --- ***/
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-  /* outline: 1px solid red; */
-}
-
-*:focus {
-  outline: none;
-}
-
-html {
-  box-sizing: border-box;
-}
-
-a {
-  outline: none;
-  color: inherit;
-  text-decoration: none;
-  color: var(--colorWhite);
-}
-
-img {
-  max-width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 /*** --- ПОДКЛЮЧЕНИЕ ШРИФТОВ FONT-FACE --- ***/
 @font-face {
   font-family: "OpenSans";
@@ -100,9 +71,39 @@ img {
   font-display: swap;
 }
 
+/*** --- НАЧАЛЬНЫЕ БАЗОВЫЕ СТИЛИ --- ***/
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  /* outline: 1px solid red; */
+}
+
+*:focus {
+  outline: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+a {
+  outline: none;
+  color: inherit;
+  text-decoration: none;
+  color: var(--colorWhite);
+}
+
+img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /*** --- ОБЩИЕ БАЗОВЫЕ СТИЛИ --- ***/
 
 body {
+  min-width: 320px;
   font-family: "OpenSans", sans-serif;
   font-style: normal;
   font-weight: var(--fontWeightRegular);
@@ -488,7 +489,7 @@ body {
 }
 
 .header__subitem:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .header__dropdown-link {
@@ -1048,6 +1049,9 @@ body {
 
 /* - checkbox custom in gallery - */
 .gallery__list-checkbox {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
   margin-top: 10px;
 }
 
@@ -1323,6 +1327,7 @@ body {
 
 .catalog__img {
   margin-bottom: 29px;
+  width: 100%;
 }
 
 .catalog__author {
